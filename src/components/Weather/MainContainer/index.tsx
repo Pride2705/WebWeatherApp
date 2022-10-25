@@ -1,4 +1,5 @@
 /* eslint-disable react/jsx-pascal-case */
+import Search from "../../SearchBar";
 import CardStyle from "./style";
 
 export const WeatherContainer = () => {
@@ -6,7 +7,7 @@ export const WeatherContainer = () => {
         <div className="weather-container min-h-full">
             <CardStyle.div className="items-center"> 
                 <CardStyle.appName className="">Weather App</CardStyle.appName>
-                <CardStyle.searchInput className="focus:outline-none focus:text-blue" placeholder="Search for a city" type="search" name="search" id="search"/>
+                <Search />
             </CardStyle.div>
         </div>
     );
